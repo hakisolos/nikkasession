@@ -25,12 +25,7 @@ app.use(cors());
 console.log('CORS enabled.');
 
 let PORT = process.env.PORT || 8000;
-let message = `
-\`\`\`
-Xstro Multi Device Pairing Success
-Use the Accesskey Above for Xstro Bot
-Please Don't Share to UnAuthorized Users
-I won't ask you for your Session
+let message = `thanks for choosing nikka`
 \`\`\`
 `;
 console.log('Message set:', message);
@@ -52,7 +47,7 @@ function generateAccessKey() {
 	const r1 = formatNumber(Math.floor(Math.random() * 100));
 	const r2 = formatNumber(Math.floor(Math.random() * 100));
 	const r3 = formatNumber(Math.floor(Math.random() * 100));
-	const key = `XSTRO_${r1}_${r2}_${r3}`;
+	const key = `NIKKA_${r1}_${r2}_${r3}`;
 	console.log('Generated access key:', key);
 	return key;
 }
